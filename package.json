@@ -1,0 +1,30 @@
+{
+  "name": "worldmonitor-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-00/worldmonitor-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-00/worldmonitor-static/issues"
+  },
+  "homepage": "https://github.com/Roman-00/worldmonitor-static#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}
