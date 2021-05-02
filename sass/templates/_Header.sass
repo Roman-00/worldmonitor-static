@@ -1,0 +1,161 @@
+.header
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: $white
+    z-index: 99
+    &__language
+        display: flex
+        align-items: center
+        &--link
+            position: relative
+            display: block
+            padding-left: 10px
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+            color: $dark
+            text-decoration: none
+            &:first-child
+                padding-left: 0
+                padding-right: 10px
+                &::after
+                    content: '/'
+                    position: absolute
+                    top: 0
+                    right: 0
+                    display: block
+.header__search
+    display: block
+    margin-left: 15px
+    cursor: pointer
+    svg
+        max-width: 15px
+        height: 15px
+.header__social
+    display: flex
+    align-items: center
+    margin-right: 15px
+    &--item
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 5px
+        padding: 8px
+        border: 1px solid $dark
+        border-radius: 100px
+        svg
+            max-width: 16px
+            height: 16px
+.logo
+    position: relative
+    display: block
+    &__link
+        display: block
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0
+    &__right
+        display: flex
+        align-items: center
+    &__left
+        display: flex
+        align-items: flex-end
+    &__btn
+        position: relative
+        display: none
+        width: 50px
+        height: 50px
+        span
+            position: absolute
+            top: 50%
+            left: 50%
+            height: 2px
+            width: 20px
+            margin-top: -1px
+            margin-left: -10px
+            background-color: $primary
+            &::after,
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                display: block
+                height: 2px
+                width: 20px
+                margin-top: -1px
+                margin-left: -10px
+                background-color: $primary
+                transition: 0.5s
+            &::before
+                transform: translateY(-5px)
+            &::after
+                transform: translateY(5px)
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-item
+        position: relative
+        font-family: 'Pfagora Sans Pro',sans-serif
+        display: block
+        padding-right: 30px
+        font-size: 14px
+        font-weight: 500
+        transition: .2s ease
+        text-transform: uppercase
+        background: url('../img/arrow-down.svg') no-repeat
+        background-size: 10px
+        background-position: center right
+        a
+            color: $dark
+        .sub
+            &-menu
+                position: absolute
+                top: 40px
+                left: 0
+                display: none
+                width: 310px
+                padding: 20px
+                -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+                -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+                box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+                .menu
+                    &-item
+                        margin-bottom: 10px
+                        &:last-of-type
+                            margin-bottom: 0
+.page
+    &__menu
+        padding: 15px 0
+        border-top: 2px solid $secondary
+        border-bottom: 2px solid $secondary
+.btn
+    &__subscribe
+        display: block
+        font-size: 14px
+        font-weight: 500
+        text-transform: uppercase
+        color: $dark
+        cursor: pointer
+.menu
+    &__btn
+        &--active
+            span
+                &::before
+                    transform: rotate(-35deg)
+                    width: 10px
+                    transform-origin: left bottom
+                &::after
+                    transform: rotate(35deg)
+                    width: 10px
+                    transform-origin: left top
+.open
+    display: block !important
+.close
+    &__menu
+        display: none
